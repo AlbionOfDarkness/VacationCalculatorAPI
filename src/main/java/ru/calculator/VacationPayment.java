@@ -1,12 +1,10 @@
 package ru.calculator;
 
-import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
 
 public class VacationPayment {
-    @Getter
     private final BigDecimal salary;
     private final int days;
 
@@ -24,6 +22,9 @@ public class VacationPayment {
         this(salary, 14);
     }
 
+    public BigDecimal getSalary() {
+        return salary;
+    }
 
     private static final double DAY_IN_MONTH_RU = 29.3;
     private static final int MONTHS_IN_YEAR = 12;

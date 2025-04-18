@@ -1,11 +1,10 @@
 package ru.calculator;
 
-import lombok.Getter;
 
 import java.math.BigDecimal;
 
 
-@Getter
+
 public class BaseResponse {
     private final BigDecimal vacationPayment;
     private final int holidayDays;
@@ -17,4 +16,15 @@ public class BaseResponse {
         this.paymentVacationDays = paymentVacationDays;
     }
 
+    public BigDecimal getVacationPayment() {
+        return vacationPayment;
+    }
+
+    public int getHolidayDays() {
+        return holidayDays;
+    }
+
+    public int getPaymentVacationDays() {
+        return paymentVacationDays;
+    }
 }
